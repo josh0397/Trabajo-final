@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="roobots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+    <title>ALMAJOs</title>
+    <!--esta tipo link servira para enlasar un favicon-->
+    <link rel="icon" type="imge/x-icon" href="./imagenes/logocomida.jpg" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-principal">Restaurant ALMAJO's</h1>
+        <nav class="nav-var">
+            <ul>
+                <li><a href="#Inicio" target="_blank">Inicio</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Reservas">Reservas</a></li>
+                <li><a href="#preguntas">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="col-1">
+            <section class="initial">
+                <h2 id="Inicio">Inicio</h2>
+
+                <article>
+
+                    <h3>Historia</h3>
+                    <p>Nuestra historia comienza con una pequeña idea que nació del amor por la cocina y el deseo de
+                        compartir momentos especiales con nuestros clientes. Desde nuestros humildes inicios, soñábamos
+                        con crear un espacio donde las personas pudieran disfrutar de platos deliciosos, preparados con
+                        ingredientes frescos y de la más alta calidad. Con esfuerzo y dedicación, transformamos ese
+                        sueño en realidad, abriendo las puertas de nuestro restaurante para ofrecer una experiencia
+                        gastronómica única. Hoy en día, seguimos comprometidos con nuestra misión de brindar un servicio
+                        excepcional y un ambiente acogedor, donde cada visita se convierta en un recuerdo inolvidable.
+                    </p>
+
+                </article>
+            </section>
+        </div>
+        <div class="col-2">
+            <section class="Menu">
+                <h2 id="Menu">Menu</h2>
+                <article>
+                    <h3>Menu 1</h3>
+                    <ul>
+                        <li>Entrada </li>
+                        <li>Platos Fuertes</li>
+                        <li>Postres</li>
+                    </ul>
+                    <h3>Menu 2</h3>
+                    <ul>
+                        <li>Entrada</li>
+                        <li>Platos Fuertes</li>
+                        <li>Postres</li>
+                    </ul>
+                    <h3>Menu 3</h3>
+                    <ul>
+                        <li>Entrada</li>
+                        <li>Platos Fuertes</li>
+                        <li>Postre</li>
+                    </ul>
+
+                </article>
+            </section>
+        </div>
+        <div class="col-3">
+            <section class="Reservas">
+                <h2 id="Reservas">Reservas</h2>
+                <article>
+                    <form action="">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre" />
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="ingresa apellido" />
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="email" />
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" />
+                        <label for="personas">Numero de personas:</label>
+                        <input type="number" id="personas" name="personas" />
+                        <input type="submit" value="Reservar" />
+                    </form>
+
+
+                </article>
+            </section>
+        </div>
+        <div class="col-4">
+            <section class="question">
+                <h2 id="preguntas">preguntas frecuentes</h2>
+                <article>
+                    <h3>¿Cuál es el horario de atención del restaurante?</h3>
+                    <p>El horario de atención es de 8:00 a.m. a 10:00 p.m., todos los días de la semana.</p>
+
+                    <h3>¿Cuál es el rango de precios promedio de los platos?</h3>
+                    <p>El rango de precios promedio de los platos oscila entre $10 y $20 USD.</p>
+
+                    <h3>¿Es posible realizar reservas anticipadas?</h3>
+                    <p>Sí, las reservas pueden realizarse llamando al número de contacto: 123-456-789.</p>
+
+                    <h3>¿El restaurante ofrece opciones para dietas especiales?</h3>
+                    <p>Sí, contamos con opciones para vegetarianos, veganos y personas con intolerancias alimentarias.
+                        Por favor, infórmenos al momento de realizar su pedido.</p>
+
+                    <h3>¿Se dispone de estacionamiento para los clientes?</h3>
+                    <p>Sí, el restaurante cuenta con estacionamiento gratuito para nuestros clientes.</p>
+
+                    <h3>¿Aceptan pagos con tarjeta de crédito o débito?</h3>
+                    <p>Sí, aceptamos pagos con tarjetas de crédito, débito y también pagos en efectivo.</p>
+
+                    <h3>¿El restaurante ofrece servicio de entrega a domicilio?</h3>
+                    <p>Sí, ofrecemos servicio de entrega a domicilio dentro de un radio de 10 km. Puede realizar su
+                        pedido a través de nuestra página web o llamando al restaurante.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <section class="imagenes">
+            <h2 id="imagenes">Mas restaurantes visita</h2>
+            <article>
+                <div class="galeria">
+                    <img src="./imagenes/logocomida.jpg" alt="" width="250px" height="250px" />
+                    <img src="./imagenes/logocomida.jpg" alt="" width="250px" height="250px" />
+                    <img src="./imagenes/logocomida.jpg" alt="" width="250px" height="250px" />
+                </div>
+
+            </article>
+        </section>
+
+    </main>
+
+    <aside>
+
+    </aside>
+    <footer>
+        <p>© 2025 Restaurant ALMAJOS's. Todos los derechos reservados.</p>
+
+    </footer>
+</body>
+
+
+</html>
