@@ -160,7 +160,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 20px;
     padding: 15px;
     font-style: oblique;
