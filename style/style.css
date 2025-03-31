@@ -151,16 +151,14 @@ footer p {
     
 }
 
-nav ul {
-    list-style-type: none;
+nav ul {    
     margin-left: 25px;
     padding: 0px;
-    display: inline-block;
     color: black;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-table;
     margin: 20px;
     padding: 15px;
     font-style: oblique;
@@ -168,10 +166,9 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: black;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
 }
 .galeria {
     display: flex;
