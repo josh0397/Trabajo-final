@@ -204,7 +204,7 @@ form input[type="email"],
 form input[type="date"],
 form input[type="time"],
 form input[type="number"]
-form input[type="option"] {
+{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
