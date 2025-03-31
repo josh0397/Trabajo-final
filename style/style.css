@@ -235,6 +235,17 @@ form input[type="submit"]:hover {
 form input:focus {
     border-color: #09f;
 }
+form select[type="opciones"] {
+    width: auto;
+    padding: 10px;
+    background-color: #09f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
 
 
 
