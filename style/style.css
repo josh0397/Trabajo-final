@@ -1,3 +1,10 @@
+/* Global Styles */
+:root {
+    --primary-color: #09f;
+    --secondary-color: #f0f8ff;
+    --text-color: #555;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -20,13 +27,13 @@ footer {
 
 header {
     background: linear-gradient(to right, #09f, #f0f8ff);
-    background-color: #f0f8ff;
+    background-color:var(--secondary-color);
     padding: 30px;
     color: black;
     border-radius: 10px;
     text-align: end;
     width: 100%;
-    box-shadow: #555 10px 10px 5px;
+    box-shadow:var(--text-color) 10px 10px 5px;
 }
 
 h1 {
@@ -45,15 +52,29 @@ main {
     padding: 5px;
     display: inline-block;
 }
+
 section.imagenes {
     border: none;
 }
+section h2 {
+    font-size: 35px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-align: left;
+}
 
-    
+section article h3 {
+    font-size: 26px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
 
 .initial article p {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -67,25 +88,25 @@ section.imagenes {
 }
 
 .Menu ul li {
-    color: #555;
+    color:var(--text-color);
     margin-bottom: 5px;
     line-height: 1.6;
 }
 
 .Menu ul li:hover {
-    color: #09f;
-    font-weight: bold;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
 
 .question article p {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 20px;
 
 }
+
 
 #imagenes {
     text-align: center;
@@ -101,7 +122,7 @@ footer {
     margin: auto;
     color: black;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px #555;
+    box-shadow: 10px 10px 5px var(--text-color);
     width: 100%;
 }
 
@@ -114,7 +135,7 @@ footer p {
 .Menu,
 .Reservas,
 .question {
-    background-color: #f0f8ff;
+    background-color:var(--secondary-color);
     padding: 40px 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -122,36 +143,13 @@ footer p {
     text-align: center;
 }
 
-.initial h2,
-.Menu h2,
-.Reservas h2,
-.question h2 {
-    font-size: 35px;
-    color: #555;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.initial article h3,
-.Menu article h3,
-.Reservas article h3,
-.question article h3 {
-    font-size: 26px;
-    color: #555;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-.question article h3 {
-    text-decoration: none;
-}
-
 
 .nav-var {
     display: inline-block;
-    
+
 }
 
-nav ul {    
+nav ul {
     margin-left: 25px;
     padding: 0px;
     color: black;
@@ -162,14 +160,16 @@ nav ul li {
     margin: 20px;
     padding: 15px;
     font-style: oblique;
-    text-decoration: underline;
+    
 }
 
 nav ul li a {
     color: black;
     font-weight: bold;
     text-align: right;
+    text-decoration: underline;
 }
+
 .galeria {
     display: flex;
     justify-content: space-around;
@@ -187,6 +187,7 @@ nav ul li a {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
 form {
     border: none;
     border-radius: 10px;
@@ -196,55 +197,63 @@ form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
+    color: var(--text-color);
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="date"],
 form input[type="time"],
-form input[type="number"]
-{
+form input[type="number"] form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #555;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 form input[type="submit"] {
     width: auto;
     padding: 10px;
-    background-color: #09f;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
+
     transition: background-color 0.2s ease;
 }
 
 form input[type="submit"]:hover {
-    background-color: #09f;
+    background-color: var(--primary-color);
     transform: scale(1.1);
     transition: transform 0.5s ease;
 }
 
 form input:focus {
-    border-color: #09f;
+    border-color: var(--primary-color);
 }
-form select[type="opciones"] {
+/* form input:invalid {
+    border-color: #ff0000;
+}
+
+form input:valid {
+    border-color: rgb(24, 122, 24);
+} */
+
+form select {
     width: auto;
     padding: 10px;
-    background-color: #09f;
-    color: white;
+    background-color:white;
+    color: black;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.2s ease;
+    border: 1px solid var(--text-color);
 }
 
 
@@ -255,12 +264,10 @@ form select[type="opciones"] {
     }
 
     50% {
-        color: #09f;
+        color: var(--primary-color);
     }
 
     100% {
         color: red;
     }
 }
-
-
