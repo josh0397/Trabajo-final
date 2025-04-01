@@ -10,6 +10,7 @@
 }
 
 body {
+    display: grid;
     margin: 5px;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -47,7 +48,7 @@ h1 {
 }
 
 main {
-    display: flex;
+    display: grid;
     margin: 5px;
     padding: 5px;
     display: inline-block;
@@ -130,6 +131,21 @@ footer p {
     text-align: center;
     color: black;
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
 
 .initial,
 .Menu,
@@ -139,7 +155,7 @@ footer p {
     padding: 40px 20px;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 40%;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -172,14 +188,13 @@ nav ul li a {
 
 .galeria {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .galeria img {
     width: 30%;
     height: auto;
-    margin:10px;
+    min-width: 300px;
     border-radius: 5px;
     margin: 20px;
 }
@@ -272,25 +287,28 @@ form select {
         color: red;
     }
 }
-@media (max-width: 320px) {
-    header,
-    section,
-    footer {
-        width: 100%;
-        margin: 0;
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: left;
         padding: 10px;
     }
 
-    .initial,
-    .Menu,
-    .Reservas,
-    .question {
-        max-width: 90%;
-        padding: 20px;
+    section {
+        padding: 10px;
     }
 
-    .galeria img {
-        width: 100%;
-        margin: 10px 0;
+    footer {
+        font-size: 0.9rem;
     }
 }
