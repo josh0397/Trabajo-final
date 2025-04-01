@@ -172,13 +172,14 @@ nav ul li a {
 
 .galeria {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .galeria img {
     width: 30%;
     height: auto;
-    min-width: 200px;
+    margin:10px;
     border-radius: 5px;
     margin: 20px;
 }
@@ -271,7 +272,7 @@ form select {
         color: red;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 320px) {
     header,
     section,
     footer {
