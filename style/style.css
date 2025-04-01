@@ -1,5 +1,5 @@
-/* Global Styles */
-:root {
+
+:root{
     --primary-color: #09f;
     --secondary-color: #f0f8ff;
     --text-color: #555;
@@ -239,7 +239,6 @@ form input[type="submit"] {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-
     transition: background-color 0.2s ease;
 }
 
