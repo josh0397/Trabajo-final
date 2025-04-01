@@ -271,3 +271,25 @@ form select {
         color: red;
     }
 }
+@media (max-width: 600px) {
+    header,
+    section,
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .initial,
+    .Menu,
+    .Reservas,
+    .question {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .galeria img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
